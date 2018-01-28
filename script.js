@@ -1,10 +1,3 @@
-//settings
-var transform="T";
-var margin="M";    
-var factor = 1,
-    factorRight = 1;
-var value = 0; 
-
 function Slider() {
   this.element = { 
     left: document.querySelector('#left'),
@@ -37,7 +30,7 @@ Slider.prototype = {
                         width.style.width = slideWidth * totalSlides;
                     });
             },
-            //bindEvents: function () { 
+            /*bindEvents: function () { 
               var move = this.element.containerWidth;
               var value = 0;
               console.log(move);
@@ -72,7 +65,8 @@ Slider.prototype = {
                     value ++;
                   }
                 });                            
-            //},
+            
+              },*/
             transformEvents: function () {
               var move = this.element.containerWidth;
               var theCarousel = this.element.carouselList.length;
