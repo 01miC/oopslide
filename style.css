@@ -1,0 +1,45 @@
+.wrap {
+    position:relative;
+    width:700px;
+    height:100px;
+    overflow: hidden;
+  }
+  .slider-container {
+    position:relative;
+    width:600px;
+    height:100px;
+    margin-left:50px;
+    overflow:hidden;
+
+  }
+  .icon-left {
+    position:absolute;
+    left:0px;
+    height:100%;
+    width:50px;
+    background-color:rgb(200,200,200);
+    z-index:99;
+  }
+  .icon-right {
+    position:absolute;
+    right:0px;
+    height:100%;
+    width:50px;
+    background-color:rgb(170,170,170);
+  }
+  #slide {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    width:1800px;
+    position:absolute;
+    display:flex;
+    transition: all 0.3s linear;
+  }
+  #slide li {
+    flex:1;
+  }
+  #slide li p {
+    margin:0;
+    height:100%;
+  }
